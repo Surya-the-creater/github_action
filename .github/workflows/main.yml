@@ -1,0 +1,19 @@
+name: github workflow
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: linux command
+        run: echo "jump high"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ex linux command
+        run: |
+          hostname
+          echo "thanks yp"
